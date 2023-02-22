@@ -88,7 +88,7 @@ const handleSubmit = async (e) => {
 
     // Slasshy-----!!!!
 
-     const response = await fetch('http://localhost:5000', {
+     const response = await fetch('https://slasshy-ai.onrender.com', {
          method: 'POST',
         headers: {
             'Content-Type': 'application/json',
