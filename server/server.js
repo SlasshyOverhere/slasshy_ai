@@ -16,12 +16,14 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const app = express()
-app.use(cors())
+const cors = require('cors');
+
 app.use(express.json())
+app.use(cors())
 
 app.get('/', async (req, res) => {
   res.status(200).send({
-    message: 'Hello from Slasshy!'
+    message: 'Hello from Slasshys Artificial Intelligence!'
   })
 })
 
